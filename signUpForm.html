@@ -13,46 +13,106 @@
 </head>
 
 <body>
-    <div class="row">
-        <div class="col-3">
-            <aside class="d-flex flex-column align-items-center justify-content-center">
-                <div class="logoDiv d-flex">
-                    <div><img class="odinLogo img-fluid" src="assets\images\odin-lined.png" width="30px" height="30px">
-                    </div>
-                    <div>
-                        <p>ODIN</p>
+    <div class="container">
+        <div class="row">
+            <div class="col col-3">
+                <aside class="d-flex flex-column align-items-center justify-content-center position-relative">
+                    <div class="logoDiv d-flex justify-content-center">
+                        <div class="imgDiv">
+                            <img class="odinLogo img-fluid" src="assets\images\odin-lined.png" width="35px"
+                                height="auto">
+                        </div>
+                        <div>
+                            <p class="m-0">ODIN</p>
+                        </div>
                     </div>
 
-            </aside>
-        </div>
-        <div class="col-9">
-            <div class="topParaDiv">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur officiis accusamus ex,
-                    recusandae porro est ratione voluptatem quaerat laborum esse neque dolores nam unde iusto vero ipsum
-                    aspernatur consequatur nostrum?</p>
+                    <div class=" credit position-absolute">
+                        <p>Photo by <a href="#">Halie West</a> on <a
+                                href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a>
+                        </p>
+                    </div>
+
+                </aside>
+            </div>
+            <div class="col col-9">
+                <div class=" container topParaDiv">
+                    <p>This is not a real online service! You know you need something <br> like this in your life to
+                        help you
+                        realize your deepest dreams. <br>Sign up <i>now</i> to get started.</p>
+                    <p>You <i>know</i> you want to.</p>
+
+                </div>
+                <div class=" container formDiv">
+                    <h1>Let's Do this!</h1>
+                    <form action="example.org" method="post">
+                        <div class="row m-0">
+                            <div class="col">
+                                <label for="first_name">First Name:</label>
+                                <br>
+                                <input type="text" id="first_name">
+
+                            </div>
+                            <div class="col">
+                                <label for="last_name">Last Name:</label>
+                                <br>
+                                <input type="text" id="last_name">
+
+                            </div>
+
+                        </div>
+
+                        <div class="row m-0">
+                            <div class="col">
+                                <label for="user_email">Email:</label>
+                                <br>
+                                <input type="email" id="user_email" name="email" placeholder="you@example.com">
+
+                            </div>
+                            <div class="col">
+                                <label for="user_phone_number">Phone Number:</label>
+                                <br>
+                                <input type="tel" id="user_phone_number" name="phone">
+
+                            </div>
+
+                        </div>
+
+                        <div class="row m-0">
+                            <div class="col">
+                                <label for="first_name">First Name:</label>
+                                <br>
+                                <input type="text" id="first_name">
+
+                            </div>
+                            <div class="col">
+                                <label for="last_name">Last Name:</label>
+                                <br>
+                                <input type="text" id="last_name">
+
+                            </div>
+
+                        </div>
+
+                    </form>
+
+
+                </div>
+
+
+
+
+
+
 
             </div>
-            <div class="formDiv">
-                <form>
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                    </div>
-                    <div class="mb-3">
-                      <label for="exampleInputPassword1" class="form-label">Password</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <div class="mb-3 form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                  </form>
-
-            </div>
 
         </div>
+    </div>
+
+
+
+
     </div>
 
 </body>

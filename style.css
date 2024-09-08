@@ -9,6 +9,10 @@ body {
   font-family: 'Norse Bold', sans-serif;
 }
 
+.col{
+  padding: 0;
+}
+
 aside {
   height: 100%;
   background-image: url("assets/images/greenBG.jpg");
@@ -19,6 +23,36 @@ aside {
 
 }
 
-logoDiv{
-  background-color:rgba(0, 0, 0, 0.9);
+.logoDiv {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+}
+
+.odinLogo {
+  padding-bottom: 15px;
+}
+
+.credit {
+  bottom: 0;
+  font-family: sans-serif;
+  font-size: 12px;
+
+  a {
+    color: #fff;
+  }
+
+  a:hover {
+    color: blue;
+  }
+
+}
+
+.topParaDiv {
+  background-color: #f9fafb;
+  line-height: 1.1 ;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 700;
+  padding-top: 100px;
+  padding-bottom: 30px;
 }
