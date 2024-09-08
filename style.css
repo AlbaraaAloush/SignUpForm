@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Norse Bold';
+  src: url('assets/fonts/Norse-Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Norse Bold', sans-serif;
+}
+
+aside {
+  height: 100%;
+  background-image: url("assets/images/greenBG.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 50px;
+  color: #fff;
+
+}
+
+logoDiv{
+  background-color:rgba(0, 0, 0, 0.9);
+}
