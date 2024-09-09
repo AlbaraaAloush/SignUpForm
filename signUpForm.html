@@ -13,10 +13,10 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container bg-white">
         <div class="row">
-            <div class="col col-3">
-                <aside class="d-flex flex-column align-items-center justify-content-center position-relative">
+            <div class="col-12 col-lg-3 px-0 ">
+                <aside class="d-flex flex-column align-items-center justify-content-center position-relative py-5">
                     <div class="logoDiv d-flex justify-content-center">
                         <div class="imgDiv">
                             <img class="odinLogo img-fluid" src="assets\images\odin-lined.png" width="35px"
@@ -35,69 +35,89 @@
 
                 </aside>
             </div>
-            <div class="col col-9">
-                <div class=" container topParaDiv">
+            <div class="col-12 col-lg-9">
+                <div class=" container topParaDiv px-4">
                     <p>This is not a real online service! You know you need something <br> like this in your life to
                         help you
                         realize your deepest dreams. <br>Sign up <i>now</i> to get started.</p>
                     <p>You <i>know</i> you want to.</p>
 
-                </div>
-                <div class=" container formDiv">
-                    <h1>Let's Do this!</h1>
-                    <form action="example.org" method="post">
-                        <div class="row m-0">
-                            <div class="col">
-                                <label for="first_name">First Name:</label>
-                                <br>
-                                <input type="text" id="first_name">
-
-                            </div>
-                            <div class="col">
-                                <label for="last_name">Last Name:</label>
-                                <br>
-                                <input type="text" id="last_name">
-
-                            </div>
-
-                        </div>
-
-                        <div class="row m-0">
-                            <div class="col">
-                                <label for="user_email">Email:</label>
-                                <br>
-                                <input type="email" id="user_email" name="email" placeholder="you@example.com">
-
-                            </div>
-                            <div class="col">
-                                <label for="user_phone_number">Phone Number:</label>
-                                <br>
-                                <input type="tel" id="user_phone_number" name="phone">
-
-                            </div>
-
-                        </div>
-
-                        <div class="row m-0">
-                            <div class="col">
-                                <label for="first_name">First Name:</label>
-                                <br>
-                                <input type="text" id="first_name">
-
-                            </div>
-                            <div class="col">
-                                <label for="last_name">Last Name:</label>
-                                <br>
-                                <input type="text" id="last_name">
-
-                            </div>
-
-                        </div>
-
-                    </form>
-
 
                 </div>
+                <div class="container py-4 px-4 middleContainer">
+                    <div class="formDiv">
+                        <h4>Let's do this!</h4>
+                        <form action="example.org" method="post" novalidate>
+                            <div class="row m-0">
+                                <div class="col-12 col-lg-6 p-0">
+                                    <label class="text12 form-label m-0" for="first_name">FIRST NAME:</label>
+                                    <br>
+                                    <input class="inputStyle form-control" type="text" id="first_name" name="first_name" required>
+                                    <div class="invalid-feedback">
+                                        First name is required.
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6 p-0">
+                                    <label class="text12 form-label m-0" for="last_name">LAST NAME:</label>
+                                    <br>
+                                    <input class="inputStyle form-control" type="text" id="last_name" name="last_name" required>
+                                    <div class="invalid-feedback">
+                                        Last name is required.
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="row m-0">
+                                <div class="col-12 col-lg-6 p-0">
+                                    <label class="text12 form-label m-0" for="user_email">EMAIL:</label>
+                                    <br>
+                                    <input class="inputStyle form-control" type="email" id="user_email" name="email" placeholder="you@example.com" required>
+                                    <div class="invalid-feedback">
+                                        Please enter a valid email address.
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6 p-0">
+                                    <label class="text12 form-label m-0" for="user_phone_number">PHONE NUMBER:</label>
+                                    <br>
+                                    <input class="inputStyle form-control" type="tel" id="user_phone_number" name="phone" pattern="^\d{10}$" required>
+                                    <div class="invalid-feedback">
+                                        Please enter a valid 10-digit phone number.
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="row m-0">
+                                <div class="col-12 col-lg-6 p-0">
+                                    <label class="text12 form-label m-0" for="password">PASSWORD:</label>
+                                    <br>
+                                    <input class="inputStyle form-control" type="password" id="password" name="password" minlength="8" required>
+                                    <div class="invalid-feedback">
+                                        Password must be at least 8 characters long.
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6 p-0">
+                                    <label class="text12 form-label m-0" for="confirm_password">CONFIRM PASSWORD:</label>
+                                    <br>
+                                    <input class="inputStyle form-control" type="password" id="confirm_password" name="confirm_password" required>
+                                    <div class="invalid-feedback">
+                                        Please confirm your password.
+                                    </div>
+                                </div>
+                            </div>
+                    
+                        </form>
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="container py-4 px-4">
+                    <button class="btn btnStyle mb-4" type="submit">Create Account</button>
+                    <p>Already have an account? <a class="logInLink" href="#">Log in</a></p>
+                </div>
+
 
 
 
